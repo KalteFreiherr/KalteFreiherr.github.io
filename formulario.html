@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ninonvarsua - Registro al Curso</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#25e2f4",
+              "background-light": "#f5f8f8",
+              "background-dark": "#102122",
+            },
+            fontFamily: {
+              "display": ["Spline Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: "Spline Sans", "Noto Sans", sans-serif;
+        }
+        .backdrop-blur-custom {
+            backdrop-filter: blur(12px);
+            background-color: rgba(16, 33, 34, 0.85);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white overflow-hidden">
+<!-- Landing Page Background (Simulated behind the popup) -->
+<div class="fixed inset-0 z-0 flex flex-col items-center justify-center pointer-events-none opacity-40">
+<div class="max-w-4xl w-full px-10 text-center">
+<h2 class="text-6xl font-bold mb-6 text-primary">Encuentra tu Felicidad</h2>
+<p class="text-xl mb-8">Únete a miles de personas en su camino hacia la transformación personal.</p>
+<div class="bg-primary/20 w-full h-96 rounded-xl border border-primary/30 flex items-center justify-center">
+<span class="text-primary/50">Contenido del curso</span>
+</div>
+</div>
+</div>
+<!-- Registration Popup Overlay -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-custom">
+<!-- Modal Container -->
+<div class="relative w-full max-w-[540px] bg-white dark:bg-[#183234] rounded-xl shadow-2xl border border-white/10 overflow-hidden">
+<!-- Top Navigation Bar / Header Inside Modal -->
+<div class="px-8 pt-8 pb-2">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#224649]/20 dark:border-white/10 pb-6">
+<div class="flex items-center gap-3 text-background-dark dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-background-dark dark:text-white text-xl font-bold leading-tight tracking-tight">Ninonvarsua</h2>
+</div>
+<button class="flex items-center justify-center rounded-full size-10 bg-[#f0f4f4] dark:bg-[#224649] text-background-dark dark:text-white hover:bg-primary/20 transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</header>
+</div>
+<!-- Content Container -->
+<div class="px-8 pb-10">
+<!-- Headline -->
+<div class="text-center py-6">
+<h1 class="text-background-dark dark:text-white tracking-tight text-[28px] font-bold leading-tight">
+                        ¡Empieza tu transformación hoy!
+                    </h1>
+<p class="text-gray-500 dark:text-[#90c6cb] mt-2 text-sm">Completa tus datos para reservar tu lugar.</p>
+</div>
+<!-- Registration Form -->
+<form class="space-y-4">
+<!-- Full Name Field -->
+<div class="flex flex-col gap-2">
+<label class="flex flex-col w-full">
+<p class="text-background-dark dark:text-white text-sm font-semibold leading-normal pb-2 px-1">Nombre completo</p>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-[#90c6cb]/60 text-xl">person</span>
+<input class="form-input flex w-full min-w-0 flex-1 rounded-xl text-background-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-[#316368] bg-[#f9fbfb] dark:bg-[#102122] h-14 placeholder:text-gray-400 dark:placeholder:text-[#90c6cb]/50 pl-12 pr-4 text-base font-normal leading-normal transition-all" placeholder="Ingresa tu nombre" value=""/>
+</div>
+</label>
+</div>
+<!-- Email Field -->
+<div class="flex flex-col gap-2">
+<label class="flex flex-col w-full">
+<p class="text-background-dark dark:text-white text-sm font-semibold leading-normal pb-2 px-1">Correo electrónico</p>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-[#90c6cb]/60 text-xl">mail</span>
+<input class="form-input flex w-full min-w-0 flex-1 rounded-xl text-background-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-[#316368] bg-[#f9fbfb] dark:bg-[#102122] h-14 placeholder:text-gray-400 dark:placeholder:text-[#90c6cb]/50 pl-12 pr-4 text-base font-normal leading-normal transition-all" placeholder="ejemplo@correo.com" type="email" value=""/>
+</div>
+</label>
+</div>
+<!-- WhatsApp Field -->
+<div class="flex flex-col gap-2">
+<label class="flex flex-col w-full">
+<p class="text-background-dark dark:text-white text-sm font-semibold leading-normal pb-2 px-1">Número de teléfono (WhatsApp)</p>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-[#90c6cb]/60 text-xl">chat</span>
+<input class="form-input flex w-full min-w-0 flex-1 rounded-xl text-background-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-[#316368] bg-[#f9fbfb] dark:bg-[#102122] h-14 placeholder:text-gray-400 dark:placeholder:text-[#90c6cb]/50 pl-12 pr-4 text-base font-normal leading-normal transition-all" placeholder="+1 234 567 890" type="tel" value=""/>
+</div>
+</label>
+</div>
+<!-- Submit Button -->
+<div class="pt-6">
+<button class="group relative w-full flex items-center justify-center overflow-hidden rounded-full h-14 bg-primary text-[#102122] gap-2 text-base font-bold leading-normal tracking-wide shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200" type="submit">
+                            Confirmar inscripción
+                            <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Privacy Note -->
+<p class="text-center text-[11px] text-gray-400 dark:text-[#90c6cb]/40 pt-4">
+                        Tus datos están protegidos. Al inscribirte aceptas nuestros términos y condiciones.
+                    </p>
+</form>
+</div>
+</div>
+</div>
+</body></html>
